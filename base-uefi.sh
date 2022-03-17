@@ -6,6 +6,9 @@ sed -i '178s/.//' /etc/locale.gen
 locale-gen
 echo "LANG=en_US.UTF-8" >> /etc/locale.conf
 echo "KEYMAP=hu" >> /etc/vconsole.conf
+echo "FONT=lat2-16" >> /etc/vconsole.conf
+echo "FONT_MAP=8859-2" >> /etc/vconsole.conf
+
 echo "arch" >> /etc/hostname
 echo "127.0.0.1 localhost" >> /etc/hosts
 echo "::1       localhost" >> /etc/hosts
